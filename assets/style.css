@@ -81,7 +81,7 @@ nav.main-nav a.cta { color: var(--gold); font-weight: 700; }
 .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 3rem; }
 .card { background: #fff; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); transition: transform 0.15s, box-shadow 0.15s; }
 .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(45,122,58,0.10); }
-.card-image { height: 148px; overflow: hidden; position: relative; background: var(--green-light); }
+.card-image { height: 148px; overflow: hidden; position: relative; background: linear-gradient(135deg, var(--green-light) 0%, #C8E6CB 100%); }
 .card-image img { width: 100%; height: 100%; object-fit: cover; }
 .state-badge { position: absolute; top: 10px; left: 10px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; }
 .badge-fl { background: var(--green-main); color: #fff; }
