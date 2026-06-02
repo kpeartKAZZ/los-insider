@@ -1,0 +1,141 @@
+/* LotsofSunshine Insider — Shared Styles */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green-dark:  #1A2E1A;
+  --green-main:  #2D7A3A;
+  --green-light: #EAF6ED;
+  --green-mid:   #9DC9A3;
+  --gold:        #FFC000;
+  --gold-dark:   #CC8800;
+  --text-dark:   #1A2E1A;
+  --text-mid:    #4A5568;
+  --text-muted:  #888;
+  --bg-page:     #F6FAF7;
+  --bg-white:    #fff;
+  --border:      #D4E8D7;
+  --serif:       Georgia, 'Times New Roman', serif;
+  --sans:        Arial, Helvetica, sans-serif;
+  --radius:      10px;
+  --radius-sm:   6px;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--bg-page); color: var(--text-dark); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* ── Header ─────────────────────────────────────────────────────────── */
+.site-header { background: var(--green-dark); position: sticky; top: 0; z-index: 100; }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-mark { width: 38px; height: 38px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: var(--green-dark); font-family: var(--serif); flex-shrink: 0; }
+.logo-wordmark { font-family: var(--serif); font-size: 19px; color: #fff; font-weight: 700; line-height: 1.1; }
+.logo-pub { font-size: 10px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-family: var(--sans); }
+nav.main-nav { display: flex; gap: 24px; }
+nav.main-nav a { color: #C8E6CB; font-size: 13px; letter-spacing: 0.4px; transition: color 0.15s; }
+nav.main-nav a:hover { color: var(--gold); }
+nav.main-nav a.cta { color: var(--gold); font-weight: 700; }
+
+/* ── Masthead / Issue Banner ─────────────────────────────────────────── */
+.masthead { background: var(--green-dark); border-top: 1px solid #2D4A2D; border-bottom: 3px solid var(--gold); }
+.masthead-inner { max-width: 1100px; margin: 0 auto; padding: 2rem 2rem 2.5rem; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; }
+.masthead-title { font-family: var(--serif); font-size: 52px; font-weight: 700; color: #fff; letter-spacing: -0.5px; line-height: 1; margin-bottom: 6px; }
+.masthead-tagline { color: var(--green-mid); font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+.masthead-meta { text-align: right; }
+.masthead-date { font-family: var(--serif); font-size: 13px; color: var(--green-mid); letter-spacing: 0.5px; margin-bottom: 4px; }
+.masthead-count { font-family: var(--serif); font-size: 28px; color: var(--gold); font-weight: 700; }
+.masthead-count-label { font-size: 11px; color: var(--green-mid); text-transform: uppercase; letter-spacing: 1px; }
+
+/* ── Filter Bar ──────────────────────────────────────────────────────── */
+.filter-bar { background: #fff; border-bottom: 1px solid var(--border); }
+.filter-inner { max-width: 1100px; margin: 0 auto; padding: 0.75rem 2rem; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.filter-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-right: 4px; }
+.tag-pill { background: var(--green-light); color: var(--green-main); font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 5px 12px; border-radius: 20px; border: 0.5px solid #B8D9C0; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+.tag-pill:hover, .tag-pill.active { background: var(--green-main); color: #fff; border-color: var(--green-main); }
+
+/* ── Main Layout ─────────────────────────────────────────────────────── */
+.main-content { max-width: 1100px; margin: 0 auto; padding: 2.5rem 2rem; }
+
+/* ── Featured Post ───────────────────────────────────────────────────── */
+.featured-post { display: grid; grid-template-columns: 1.2fr 1fr; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: #fff; margin-bottom: 2.5rem; }
+.featured-image { min-height: 300px; background: var(--green-light); overflow: hidden; position: relative; }
+.featured-image img { width: 100%; height: 100%; object-fit: cover; }
+.featured-badge { position: absolute; top: 14px; left: 14px; background: var(--gold); color: var(--green-dark); font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; }
+.featured-body { padding: 32px 28px; display: flex; flex-direction: column; justify-content: center; }
+.featured-kicker { font-size: 10px; font-weight: 700; color: var(--green-main); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px; }
+.featured-title { font-family: var(--serif); font-size: 24px; color: var(--text-dark); font-weight: 700; line-height: 1.3; margin-bottom: 12px; }
+.featured-excerpt { font-size: 14px; color: var(--text-mid); line-height: 1.65; margin-bottom: 22px; }
+.btn { display: inline-block; background: var(--green-main); color: #fff; font-size: 12px; font-weight: 700; padding: 10px 22px; border-radius: var(--radius-sm); letter-spacing: 0.5px; transition: background 0.15s; }
+.btn:hover { background: var(--green-dark); }
+.btn-gold { background: var(--gold); color: var(--green-dark); }
+.btn-gold:hover { background: var(--gold-dark); color: #fff; }
+
+/* ── Section Header ──────────────────────────────────────────────────── */
+.section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
+.section-head h2 { font-family: var(--serif); font-size: 20px; color: var(--text-dark); font-weight: 700; border-left: 4px solid var(--gold); padding-left: 12px; }
+.section-head a { font-size: 12px; color: var(--green-main); }
+
+/* ── Card Grid ───────────────────────────────────────────────────────── */
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 3rem; }
+.card { background: #fff; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); transition: transform 0.15s, box-shadow 0.15s; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(45,122,58,0.10); }
+.card-image { height: 148px; overflow: hidden; position: relative; background: var(--green-light); }
+.card-image img { width: 100%; height: 100%; object-fit: cover; }
+.state-badge { position: absolute; top: 10px; left: 10px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; }
+.badge-fl { background: var(--green-main); color: #fff; }
+.badge-az { background: #CC8800; color: #fff; }
+.badge-ar { background: #1E5527; color: #fff; }
+.badge-multi { background: var(--green-dark); color: var(--gold); }
+.card-body { padding: 14px 16px 16px; }
+.card-meta { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+.card-title { font-family: var(--serif); font-size: 15px; color: var(--text-dark); line-height: 1.4; margin-bottom: 8px; font-weight: 700; }
+.card-excerpt { font-size: 12px; color: var(--text-mid); line-height: 1.55; margin-bottom: 12px; }
+.card-foot { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--green-light); padding-top: 10px; }
+.card-price { font-size: 12px; font-weight: 700; color: var(--green-main); }
+.card-link { font-size: 11px; color: var(--green-main); font-weight: 700; letter-spacing: 0.3px; }
+
+/* ── Individual Post Page ────────────────────────────────────────────── */
+.post-header { background: var(--green-dark); padding: 3rem 2rem 2.5rem; }
+.post-header-inner { max-width: 760px; margin: 0 auto; }
+.post-kicker { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
+.post-title { font-family: var(--serif); font-size: 36px; color: #fff; font-weight: 700; line-height: 1.2; margin-bottom: 14px; }
+.post-byline { font-size: 13px; color: var(--green-mid); }
+.post-byline strong { color: var(--gold); }
+.post-hero { width: 100%; max-height: 400px; object-fit: cover; }
+.post-body { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+.post-content { font-size: 16px; line-height: 1.75; color: var(--text-mid); }
+.post-content h2 { font-family: var(--serif); font-size: 22px; color: var(--text-dark); margin: 2rem 0 0.75rem; }
+.post-content p { margin-bottom: 1.25rem; }
+.post-content a { color: var(--green-main); text-decoration: underline; }
+.post-content img { border-radius: var(--radius); margin: 1.5rem 0; width: 100%; }
+.post-nav { max-width: 760px; margin: 0 auto; padding: 1.5rem 2rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 13px; }
+.post-nav a { color: var(--green-main); }
+
+/* ── Footer ──────────────────────────────────────────────────────────── */
+.site-footer { background: var(--green-dark); padding: 3rem 2rem 1.5rem; margin-top: 1rem; }
+.footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid #2D4A2D; }
+.footer-brand-desc { color: #9DC9A3; font-size: 13px; margin-top: 10px; line-height: 1.65; max-width: 300px; }
+.footer-col h4 { color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px; }
+.footer-col a { display: block; color: #9DC9A3; font-size: 13px; margin-bottom: 8px; transition: color 0.15s; }
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom { max-width: 1100px; margin: 1.25rem auto 0; display: flex; justify-content: space-between; align-items: center; }
+.footer-bottom p { color: #6B9E73; font-size: 12px; }
+.footer-domain { color: var(--gold); font-weight: 700; font-size: 12px; }
+
+/* ── Responsive ──────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .featured-post { grid-template-columns: 1fr; }
+  .masthead-inner { grid-template-columns: 1fr; }
+  .masthead-title { font-size: 36px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr; }
+  .header-inner { flex-direction: column; height: auto; padding: 1rem; gap: 10px; }
+  nav.main-nav { flex-wrap: wrap; justify-content: center; }
+  .masthead-title { font-size: 28px; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
