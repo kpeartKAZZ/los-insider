@@ -27,7 +27,7 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; height: auto; display: block; }
 
 /* ── Header ─────────────────────────────────────────────────────────── */
-.header-accent { background: linear-gradient(90deg, #4a7a3a 0%, #68a050 100%); height: 4px; }
+.header-accent { background: linear-gradient(90deg, #4a7a3a 0%, #68a050 40%, #c49000 80%, #FFC000 100%); height: 4px; }
 .site-header { background: #ffffff; border-bottom: 1px solid #e4eed8; position: sticky; top: 0; z-index: 100; }
 .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 60px; }
 .logo { display: flex; align-items: center; gap: 10px; }
@@ -43,15 +43,15 @@ nav.main-nav a.cta:hover { background: #4a7a3a; color: #fff; }
 /* ── Masthead / Issue Banner ─────────────────────────────────────────── */
 .masthead { background: linear-gradient(180deg, #f2f9ee 0%, #eaf5e4 50%, #f2f9ee 100%); border-bottom: 1px solid #d4ecc8; }
 .masthead-inner { max-width: 1100px; margin: 0 auto; padding: 1.25rem 2rem 1.5rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; }
-.masthead-title { font-family: var(--serif); font-size: 28px; font-weight: 400; color: #1a2e14; letter-spacing: 0; line-height: 1.1; margin-bottom: 5px; }
+.masthead-title { font-family: var(--serif); font-size: 28px; font-weight: 700; color: #c49000; letter-spacing: 0; line-height: 1.1; margin-bottom: 5px; }
 .masthead-tagline { color: #587848; font-size: 13px; letter-spacing: 0; text-transform: none; }
 .masthead-stats { text-align: right; }
-.masthead-dateline { font-size: 10px; color: #80aa68; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 7px; }
+.masthead-dateline { font-size: 10px; color: #c49000; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 7px; }
 .masthead-stats-row { display: flex; align-items: center; gap: 0; justify-content: flex-end; }
 .masthead-stat { text-align: center; padding: 0 15px; }
 .masthead-stat:first-child { padding-left: 0; }
 .masthead-stat-divider { width: 1px; height: 30px; background: #b8d8a4; }
-.masthead-stat-num { font-family: var(--serif); font-size: 21px; font-weight: 400; color: #3a6a2a; line-height: 1; letter-spacing: 0; }
+.masthead-stat-num { font-family: var(--serif); font-size: 21px; font-weight: 400; color: #c49000; line-height: 1; letter-spacing: 0; }
 .masthead-stat-lbl { font-size: 9.5px; font-weight: 700; color: #78a860; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 2px; }
 
 /* ── Filter Bar ──────────────────────────────────────────────────────── */
