@@ -103,12 +103,12 @@ nav.main-nav a.cta:hover { background: #4a7a3a; color: #fff; }
 .card-link { font-size: 11px; color: var(--green-main); font-weight: 700; letter-spacing: 0.3px; }
 
 /* ── Individual Post Page ────────────────────────────────────────────── */
-.post-header { background: var(--green-dark); padding: 3rem 2rem 2.5rem; }
+.post-header { background: linear-gradient(180deg, #f2f9ee 0%, #eaf5e4 50%, #f2f9ee 100%); border-bottom: 1px solid #d4ecc8; padding: 3rem 2rem 2.5rem; }
 .post-header-inner { max-width: 760px; margin: 0 auto; }
-.post-kicker { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
-.post-title { font-family: var(--serif); font-size: 36px; color: #fff; font-weight: 700; line-height: 1.2; margin-bottom: 14px; }
-.post-byline { font-size: 13px; color: var(--green-mid); }
-.post-byline strong { color: var(--gold); }
+.post-kicker { font-size: 11px; color: #c49000; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
+.post-title { font-family: var(--serif); font-size: 36px; color: #1a2e14; font-weight: 700; line-height: 1.2; margin-bottom: 14px; }
+.post-byline { font-size: 13px; color: #587848; }
+.post-byline strong { color: #c49000; }
 .post-hero { width: 100%; max-height: 400px; object-fit: cover; }
 .post-body { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
 .post-content { font-size: 16px; line-height: 1.75; color: var(--text-mid); }
