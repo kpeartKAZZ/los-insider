@@ -2,5 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://insider.lotsofsunshine.com/sitemap.xml
-Sitemap: https://insider.lotsofsunshine.com/feed-properties.xml
-Sitemap: https://insider.lotsofsunshine.com/feed-articles.xml
+Sitemap: https://insider.lotsofsunshine.com/feed.xml
